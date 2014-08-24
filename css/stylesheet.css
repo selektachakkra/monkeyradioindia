@@ -1,0 +1,68 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{color:inherit;}
+
+/* ---------------------------- */
+@font-face {
+    font-family: ronnia;
+    src: url(../fonts/ronniaLight.woff2);
+}
+
+/* Mobile starts here */
+@media (min-width: 320px) {
+body{font-family: ronnia, Arial, Helvetica, sans-serif;}
+.mixList{margin:5px 5px 0 0; float:left; cursor:pointer;}
+.mixWrapper{}
+#monkeyPlayer{position: fixed; bottom: 0; left: 0; right: 0; 1border-top:1px solid #545657; background:#25292c; height:60px;
+1box-shadow: 0px 5px 20px 4px;}
+
+/* mix properties */
+.mixImage{float:left;}
+.mixName{float:left;font-size: 14px; font-weight: bold; margin: 10px; width: 60%; display: block; line-height: 16px;}
+.mix{display:block;margin: 5px 5px; border:1px solid #e3e3e3; border-radius:2px;}
+.mixDetailsSection{float: left; margin: 0px 0px 0px 10px; display: block; width: 50%; font-size: 12px; color:#4b4a4a; margin-bottom:7px;}
+.mixDetailsSection a{font-weight:bold;}
+.clearSpan{clear:both; display:block}
+}
