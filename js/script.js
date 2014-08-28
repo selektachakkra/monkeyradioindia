@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 
 	var a = 'http://api.mixcloud.com/monkeyradioindia/cloudcasts/';
 	var hostList = {
@@ -35,7 +36,7 @@ $(document).ready(function(){
 			
 			/* To get mix iFrame */
 			var mix = data.data[i].url;
-			var mixURL = '<iframe src="//www.mixcloud.com/widget/iframe/?feed='+mix+'&amp;embed_uuid=2fa6d3fd-bf4f-4c21-83ba-bdb4771c437a&amp;replace=0&amp;hide_cover=1&amp;embed_type=widget_standard&amp;hide_tracklist=1" frameborder="0"></iframe>';
+			var mixURL = '<iframe src="//www.mixcloud.com/widget/iframe/?feed='+mix+'&amp;embed_uuid=2fa6d3fd-bf4f-4c21-83ba-bdb4771c437a&amp;replace=0&amp;hide_cover=1&amp;embed_type=widget_standard&amp;hide_tracklist=1;autoplay=1" frameborder="0"></iframe>';
 			
 			/* To get mix name */
 			var name = data.data[i].name;
@@ -73,7 +74,7 @@ $(document).ready(function(){
 		
 		$('.mix').on('click',function(){
 			
-			var src='//www.mixcloud.com/widget/iframe/?feed='+$(this).children('span').attr('href')+'&amp;embed_uuid=2fa6d3fd-bf4f-4c21-83ba-bdb4771c437a&amp;replace=0&amp;hide_cover=1&amp;embed_type=widget_standard&amp;hide_tracklist=1';
+			var src='//www.mixcloud.com/widget/iframe/?feed='+$(this).children('span').attr('href')+'&amp;embed_uuid=2fa6d3fd-bf4f-4c21-83ba-bdb4771c437a&amp;replace=0&amp;hide_cover=1&amp;embed_type=widget_standard&amp;hide_tracklist=1;autoplay=1';
 
 			$('#monkeyPlayer iframe').attr('src',src);
 		
